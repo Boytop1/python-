@@ -1,0 +1,15 @@
+#ifndef __{{CLASSNAME}}_H__
+#define __{{CLASSNAME}}_H__
+
+class {{Class_Name}}
+{
+public:
+    {{Class_Name}}() {}
+    ~{{Class_Name}}() {}
+
+{%- for Name,Type  in member.items() %}
+    {{Type}} m_{{Name}};
+{%- endfor %}
+};
+
+#endif
